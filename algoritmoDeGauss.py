@@ -13,6 +13,10 @@ Seja A = (aij)m x n
 """
 import numpy as np
 def findPivo(A):
+
+	if A[0][0] == 0:
+		print(A[0][0])
+		swap(A,0,len(A)-1)
 	for i in range(len(A) - 1):
 		for j in range(i+1,len(A)):
 			aic1 = A[j][i] #aic1
